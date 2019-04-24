@@ -1,0 +1,20 @@
+﻿/* ********************* */
+/* Estilos para que el tamaño de las cajas se tome a partir de los bordes: tamaño total de la caja definida por width y height    */
+*,
+*::before,
+*::after
+{
+        box-sizing: border-box;
+}
+
+/* ********************* */
+/* resetear los margenes de todos los elementos html */
+* { margin: 0;}
+
+/* ********************* */
+/* Declaración de variables */
+:root
+{
+  /* Dimensiones de la cabeceraFija */
+  
+}

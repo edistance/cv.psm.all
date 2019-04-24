@@ -1,0 +1,25 @@
+.cabeceraFija{
+  background-color: yellowgreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;  /* alargamiento de los items para ocupar la longitud del eje transversal (perpendicular al eje principal) */
+}
+
+.cabeceraFija__item{
+  flex-shrink: 0; /* factor de encogimiento */
+  flex-grow: 0; /* factor de crecimiento */
+  
+}
+.cabeceraFija__titulos{
+  background-color: yellow;
+  display: inline-block;
+  text-align: right;
+  margin-left: 3rem;
+}
+.cabeceraFija__foto{
+  width: 100px;
+  /* "height" se toma del valor "stretch" de la propiedad "align-items" del contenedor flex */
+  display: inline-block;
+  background-color: cadetblue;
+}
