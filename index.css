@@ -1,9 +1,15 @@
 .cabeceraFija{
-  background-color: yellowgreen;
+  background-image: linear-gradient(
+                                    hsla(200deg,100%,60%,0.5) 60%, 
+                                    hsla(200deg,50%,70%,0.5)
+                                   ) ;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: stretch;  /* alargamiento de los items para ocupar la longitud del eje transversal (perpendicular al eje principal) */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
 }
 
 .cabeceraFija__item{
@@ -12,7 +18,7 @@
   
 }
 .cabeceraFija__titulos{
-  background-color: yellow;
+  /* background-color: yellow; */
   display: inline-block;
   text-align: right;
   margin-left: 3rem;
@@ -21,5 +27,14 @@
   width: 100px;
   /* "height" se toma del valor "stretch" de la propiedad "align-items" del contenedor flex */
   display: inline-block;
-  background-color: cadetblue;
+  background-image: url(/recursos/pedrosm-rojo-100x138.jpg);
+  background-repeat: no-repeat;
+  /* background-clip: content-box; */
+  /* border-style: solid;
+  border-width: 2px; */
+  /* border-radius: 5px; */
+  /* padding: 0.5rem; */
+  background-size: auto 100%; /* especifica "width" y "height" */
+  background-position: center;
+  /* box-shadow: 0 5px 30px -10px #000; */
 }
