@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="base.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/index.css">
   <script src="js/index.js"></script>
   <title>Curriculum Vitae: Pedro Salas Morales</title>
 </head>
@@ -19,23 +20,43 @@
         <h3 class="cabeceraFija__titulos--actualidad">2019</h3>
       </div> <!-- contenedorFlex-cabeceraFija__titulos -->
     </header> <!-- contenedorFlex-cabeceraFija -->
-    <nav>
-      <ul class="contenedorFlex-navSeccion">
-        <li class="item-NavSeccion"><a class="negrita" href="#">Datos Generales</a></li>
-        <!-- <li class="item-NavSeccion negrita">Datos Generales</li> -->
-        <li class="item-NavSeccion"><a class="negrita" href="#">Preparación</a>
-          <ul class="contenedorFlex-menuNivel2">
-            <li class="item-NavSeccion preparacion-nivel2"><a href="#">Licenciado en Informatica (Titulo)</a></li>
-            <li class="item-NavSeccion preparacion-nivel2"><a href="#">Licenciado en Informatica (Cedula Profesional)</a></li>
-          </ul>
-        </li>
-        <!-- <li class="item-NavSeccion negrita">Preparación</li> -->
-        <li class="item-NavSeccion"><a class="negrita" href="#">Trayectoria</a></li>
-        <!-- <li class="item-NavSeccion negrita">Trayectoria</li> -->
-        <li class="item-NavSeccion"><a class="negrita" href="#">Contacto</a></li>
-        <!-- <li class="item-NavSeccion negrita">Contacto</li> -->
-      </ul> <!-- contenedorFlex-navSeccion -->
-    </nav>
+    <!-- inicio menu -->
+    <nav class="nav-menu">
+      <ul class="ul-menu__Nivel1">
+        <li class="li-menu--item__Nivel1--datos-generales">
+          <a href="#" class="a-menu--link__Nivel1">Datos Generales</a>
+        </li> <!-- li-menu--item__Nivel1--datos-generales -->
+        <li class="li-menu--item__Nivel1--preparacion">
+            <a href="#" class="a-menu--link__Nivel1">Preparación</a>
+            <!-- submenu para el item preparación -->
+            <!-- la clase "submenu" se aplicara a todos los menus a partir del segundo nim=vel -->
+            <ul class="ul-menu__Nivel2 submenu">
+              <li class="li-menu--item__Nivel2">
+                <a href="#" class="a-menu--link__Nivel2">Lic. en Informatica (Titulo)</a>
+              </li>
+              <li class="li-menu--item__Nivel2">
+                <a href="#" class="a-menu--link__Nivel2">Lic. en Informatica (Cedula Profesional)</a>
+              </li>
+              <li class="li-menu--item__Nivel2">
+                <a href="#" class="a-menu--link__Nivel2">Educación Curso 1</a>
+              </li>
+              <li class="li-menu--item__Nivel2">
+                  <a href="#" class="a-menu--link__Nivel2">Educación Curso 2</a>
+                </li>
+                <li class="li-menu--item__Nivel2">
+                    <a href="#" class="a-menu--link__Nivel2">Educación Curso 3</a>
+                  </li>
+            </ul> <!-- ul-menu__Nivel2 submenu -->
+        </li> <!-- li-menu--item__Nivel1--preparacion -->
+        <li class="li-menu--item__Nivel1--trayectoria">
+            <a href="#" class="a-menu--link__Nivel1">Trayectoria</a>
+        </li> <!-- li-menu--item__Nivel1--trayectoria -->
+        <li class="li-menu--item__Nivel1--contacto">
+            <a href="#" class="a-menu--link__Nivel1">Contacto</a>
+        </li> <!-- li-menu--item__Nivel1--contacto -->
+      </ul> <!-- ul-menu__Nivel1 -->
+    </nav> <!-- nav-menu -->
+    <!-- fin menu -->
     
 		<section class="modulos" id="modulos">
       <!-- <p>aqui apareceran los detalles correspondientes a la opción deseada</p> -->

@@ -22,7 +22,6 @@
   
 }
 .contenedorFlex-cabeceraFija__titulos{
-  /* background-color: yellow; */
   display: inline-block;
   text-align: right;
   margin-left: 3rem;
@@ -45,7 +44,7 @@
   width: 100px;
   /* "height" se toma del valor "stretch" de la propiedad "align-items" del contenedor flex */
   display: inline-block;
-  background-image: url(recursos/pedrosm-rojo-100x138.jpg);
+  background-image: url(../recursos/pedrosm-rojo-100x138.jpg);
   background-repeat: no-repeat;
   /* background-clip: content-box; */
   /* border-style: solid;
@@ -55,28 +54,6 @@
   background-size: auto 100%; /* especifica "width" y "height" */
   background-position: center;
   /* box-shadow: 0 5px 30px -10px #000; */
-}
-
-.contenedorFlex-navSeccion {
-  display: flex;
-  background-color: hsla(200deg,50%,50%,0.5);
-  height: 2em;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.contenedorFlex-menuNivel2 {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: flex-start; */
-  /* align-content: flex-start; */
-  background-color: hsla(200deg,50%,50%,1);
-}
-
-.item-NavSeccion{
-  display: inline-block;
-  /* color: hsla(240deg, 50%, 50%, 1); */
-  /* text-decoration: none; */
 }
 
 .modulos{

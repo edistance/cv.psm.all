@@ -1,0 +1,57 @@
+/* selector "texto" dentro de un atributo (en cualquier parte) */
+[class*="ul-menu"]{
+  /* quitar el padding que tiene por defecto. */
+  padding-left: 0;
+  /* quitar las viñetas */
+  list-style-type: none;
+  /* background-color: hsla(200, 50%, 25%, 0.9); */
+  background-color: hsla(200deg,50%,50%,0.8);
+  display: flex;
+}
+
+/* seleccionar los item del flex */
+[class*="li-menu--item"]{
+  /* factor de crecimiento1 a los item flex para que ocupen por igual el espacio disponible */
+  flex-grow: 1;
+}
+
+/* selector "texto" dentro de un atributo (en cualquier parte) */
+[class*="a-menu--link"]{
+  /* quitar el subrayado de los -a- */
+  text-decoration: none;
+  color: hsla(240, 100%, 50%, 1);
+  /* se aplica display: block para asignarle padding  */
+  display: block;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+
+.submenu{
+  /* se le asigno display: flex mediante el selector [class*="ul-menu"] */
+  flex-direction: column;
+  position: absolute; /* hace que se salga del flujo y que sobreiluminado solo este submenu */
+  
+  /* ocultar el submenu */
+    display: none;
+}
+
+/* indicar con background-color SOLO el link seleccionado */
+/* [class*="a-menu--link"]:hover{
+  background-color: hsla(200, 50%, 25%, 1);
+} */
+
+/* indicar con background-color el link seleccionado pero mediante el "li" padre indicando opcion y subopcion al mismo tiempo */
+[class*="li-menu"]:hover{
+  /* background-color: hsla(200, 50%, 25%, 1); */
+  background-color: hsla(200deg,50%,50%,0.9);
+}
+
+/* mostrar el submenu al seleccionar la opción de nivel superior donde se encuentra */
+[class*="li-menu"]:hover .submenu{
+  display: block;
+}
+
+
