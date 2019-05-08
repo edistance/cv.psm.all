@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="index.css">
+  <script src="js/index.js"></script>
   <title>Curriculum Vitae: Pedro Salas Morales</title>
 </head>
 <body>
@@ -21,14 +22,26 @@
     <nav>
       <ul class="contenedorFlex-navSeccion">
         <li class="item-NavSeccion"><a class="negrita" href="#">Datos Generales</a></li>
-        <li class="item-NavSeccion"><a class="negrita" href="#">Preparación</a></li>
+        <!-- <li class="item-NavSeccion negrita">Datos Generales</li> -->
+        <li class="item-NavSeccion"><a class="negrita" href="#">Preparación</a>
+          <ul class="contenedorFlex-menuNivel2">
+            <li class="item-NavSeccion preparacion-nivel2"><a href="#">Licenciado en Informatica (Titulo)</a></li>
+            <li class="item-NavSeccion preparacion-nivel2"><a href="#">Licenciado en Informatica (Cedula Profesional)</a></li>
+          </ul>
+        </li>
+        <!-- <li class="item-NavSeccion negrita">Preparación</li> -->
         <li class="item-NavSeccion"><a class="negrita" href="#">Trayectoria</a></li>
+        <!-- <li class="item-NavSeccion negrita">Trayectoria</li> -->
         <li class="item-NavSeccion"><a class="negrita" href="#">Contacto</a></li>
+        <!-- <li class="item-NavSeccion negrita">Contacto</li> -->
       </ul> <!-- contenedorFlex-navSeccion -->
     </nav>
     
-		<section id="modulos">
-			<!-- aqui apareceran los detalles correspondientes a la opción deseada -->
+		<section class="modulos" id="modulos">
+      <!-- <p>aqui apareceran los detalles correspondientes a la opción deseada</p> -->
+      <!-- '<iframe src="' + moduloAMostrar + '" width="100%" height="500" scrolling="auto" />'; -->
+      <!-- <iframe class="iframe-modulos" src="recursos/keyboard-shortcuts-linux.pdf" scrolling="auto" />; -->
+      <img class="curriculum-detalle" src="/recursos/pedrosm-rojo-100x138.jpg" alt="">
 		</section> <!-- id="modulos" -->
 
 

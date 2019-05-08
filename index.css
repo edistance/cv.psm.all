@@ -57,7 +57,7 @@
   /* box-shadow: 0 5px 30px -10px #000; */
 }
 
-.contenedorFlex-navSeccion{
+.contenedorFlex-navSeccion {
   display: flex;
   background-color: hsla(200deg,50%,50%,0.5);
   height: 2em;
@@ -65,7 +65,25 @@
   align-items: center;
 }
 
+.contenedorFlex-menuNivel2 {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  /* align-content: flex-start; */
+  background-color: hsla(200deg,50%,50%,1);
+}
+
 .item-NavSeccion{
   display: inline-block;
+  /* color: hsla(240deg, 50%, 50%, 1); */
   /* text-decoration: none; */
+}
+
+.modulos{
+/* Sección para mostar los detalles */
+width: 100%;
+/* height: auto; */
+
+background-color: aquamarine;
+/* background-image: url(recursos/keyboard-shortcuts-linux.jpg); */
 }
