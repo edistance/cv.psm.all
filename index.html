@@ -21,10 +21,15 @@
       </div> <!-- contenedorFlex-cabeceraFija__titulos -->
     </header> <!-- contenedorFlex-cabeceraFija -->
     <!-- inicio menu -->
+    <!-- Los atributos data-*  nos permiten almacenar información adicional sobre elementos HTML semánticos estándar sin otros hacks como atributos no estándar, propiedades adicionales en el DOM, o Node.setUserData(). -->
+    <!-- Leer los valores de estos atributos en JavaScript también es muy sencillo. Puede usar getAttribute() con su nombre HTML completo para leerlos, pero el estándar define una forma más simple: un DOMStringMap puede leer a través de una propiedad dataset. Cada propiedad es una cadena y se puede leer y escribir.
+    Para obtener un atributo data a través del dataset del objeto, obtenga la propiedad por la parte del nombre del atributo despues de data- (tenga en cuenta que los guiones son convertidos en camelCase). -->
     <nav class="nav-menu">
       <ul class="ul-menu__Nivel1">
         <li class="li-menu--item__Nivel1--datos-generales">
-          <a href="#" class="a-menu--link__Nivel1">Datos Generales</a>
+          <a href="#" class="a-menu--link__Nivel1" 
+          data-detalle="psm-datos-generales.png" 
+          onclick="muestraModulo(this)">Datos Generales</a>
         </li> <!-- li-menu--item__Nivel1--datos-generales -->
         <li class="li-menu--item__Nivel1--preparacion">
             <a href="#" class="a-menu--link__Nivel1">Preparación</a>
@@ -32,13 +37,19 @@
             <!-- la clase "submenu" se aplicara a todos los menus a partir del segundo nim=vel -->
             <ul class="ul-menu__Nivel2 submenu">
               <li class="li-menu--item__Nivel2">
-                <a href="#" class="a-menu--link__Nivel2">Lic. en Informatica (Titulo)</a>
+                <a href="#" class="a-menu--link__Nivel2" 
+                data-detalle="tituloInformatica(Frente).jpg"
+                onclick="muestraModulo(this)">Lic. en Informatica (Titulo)</a>
               </li>
               <li class="li-menu--item__Nivel2">
-                <a href="#" class="a-menu--link__Nivel2">Lic. en Informatica (Cedula Profesional)</a>
+                <a href="#" class="a-menu--link__Nivel2"
+                data-detalle="cedulaProfesionalInformatica.jpg"
+                onclick="muestraModulo(this)">Lic. en Informatica (Cedula Profesional)</a>
               </li>
               <li class="li-menu--item__Nivel2">
-                <a href="#" class="a-menu--link__Nivel2">Educación Curso 1</a>
+                <a href="#" class="a-menu--link__Nivel2"
+                data-detalle="profordemsDiplomadoCompetenciasDocentes.jpg"
+                onclick="muestraModulo(this)">PROFORDEMS - Diplomado en Competencias Docentes</a>
               </li>
               <li class="li-menu--item__Nivel2">
                   <a href="#" class="a-menu--link__Nivel2">Educación Curso 2</a>
@@ -62,7 +73,7 @@
       <!-- <p>aqui apareceran los detalles correspondientes a la opción deseada</p> -->
       <!-- '<iframe src="' + moduloAMostrar + '" width="100%" height="500" scrolling="auto" />'; -->
       <!-- <iframe class="iframe-modulos" src="recursos/keyboard-shortcuts-linux.pdf" scrolling="auto" />; -->
-      <img class="curriculum-detalle" src="/recursos/pedrosm-rojo-100x138.jpg" alt="">
+      <img class="curriculum-detalle" id="modulo-detalle" src="recursos/psm-datos-generales.png" alt="">
 		</section> <!-- id="modulos" -->
 
 

@@ -57,10 +57,10 @@
 }
 
 .modulos{
-/* Sección para mostar los detalles */
-width: 100%;
-/* height: auto; */
-
-background-color: aquamarine;
-/* background-image: url(recursos/keyboard-shortcuts-linux.jpg); */
+  display: flex;
+  justify-content: center;
+  }
+  
+.curriculum-detalle{
+width: 60%;
 }

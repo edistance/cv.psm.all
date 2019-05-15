@@ -19,7 +19,7 @@
 [class*="a-menu--link"]{
   /* quitar el subrayado de los -a- */
   text-decoration: none;
-  color: hsla(240, 100%, 50%, 1);
+  color: hsla(240, 100%, 100%, 1);
   /* se aplica display: block para asignarle padding  */
   display: block;
   padding-top: 0.5em;

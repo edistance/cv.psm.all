@@ -1,22 +1,15 @@
-window.addEventListener("load", muestraModuloInicio, false);
-function muestraModuloInicio()
-{
-	var muestraModulo = document.getElementById("modulos");
-	// muestraModulo.innerHTML = '<p>recursos/keyboard-shortcuts-linux.pdf</p>';
-	// muestraModulo.innerHTML = recursos/keyboard-shortcuts-linux.pdf;
-	//'<iframe src="alumnos-consulta.html" width="100%" height="500" scrolling="auto" />';
-}
-function muestraModulo(menuPrincipal_li_Seleccionada)
-{
-	// el parametro 'menuPrincipal_li_Seleccionada' corresponde al objeto (li) sobre el
-	// cual se hizo 'clic'.
+function muestraModulo(menuOpcion_a_Seleccionada){
+	// el parametro 'menuOpcion_a_Seleccionada' corresponde al objeto (<a>) sobre el
+	// cual se hizo 'clic', pasado con 'this'
 	
-	// el atributo 'modulo' es un atributo definido por el usuario en la etiqueta li del menu
-	//  y contiene el nombre del archivo html correspondiente.
-	var moduloAMostrar = menuPrincipal_li_Seleccionada.getAttribute('modulo');
-	// el parametro 'modulos' corresponde al elemento section donde se muestran los modulos.
-	var muestraModulo = document.getElementById("modulos");
-	muestraModulo.innerHTML = 
-	'<iframe src="' + moduloAMostrar + '" width="100%" height="500" scrolling="auto" />';
+  // la siguiente linea obtiene el detalle a mostrar almacenado en el atributo "data-detalle"
+  // del elemento html.
+  // la variable "detalleAMostrar" contiene el nombre de la imagen a mostrar.
+  var detalleAMostrar = menuOpcion_a_Seleccionada.dataset.detalle;
+  
+  // El id "modulo-detalle" corresponde al elemento img de html donde se mostraran los detalles
+  // la variable "muestraDetalle" contiene el elemento html <img>
+  var muestraDetalle = document.getElementById("modulo-detalle");
+  // La siguiente linea actualiza el contenido del recurso del <img> 
+  muestraDetalle.src = 'recursos/' + detalleAMostrar;
 }
-
